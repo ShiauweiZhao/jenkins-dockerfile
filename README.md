@@ -5,7 +5,7 @@
 目的是在docker 启动的jenkins里面使用宿主机的docker
 
 ```
-docker run -d \
+sudo docker run -d \
 	-v jenkins_home:/var/jenkins_home \
         -v /var/run/docker.sock:/var/run/docker.sock \
         -v $(which docker):/usr/bin/docker \
